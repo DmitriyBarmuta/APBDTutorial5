@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KDQAGa3OExE=",
+  "dgSpecHash": "05ZGtxdVYKo=",
   "success": true,
   "projectFilePath": "/Users/dmitriy/RiderProjects/Tutorial5/Tutorial5/Tutorial5.csproj",
-  "expectedPackageFiles": [
-    "/Users/dmitriy/.nuget/packages/microsoft.netcore.app.ref/8.0.13/microsoft.netcore.app.ref.8.0.13.nupkg.sha512",
-    "/Users/dmitriy/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.13/microsoft.aspnetcore.app.ref.8.0.13.nupkg.sha512",
-    "/Users/dmitriy/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.13/microsoft.netcore.app.host.osx-arm64.8.0.13.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
