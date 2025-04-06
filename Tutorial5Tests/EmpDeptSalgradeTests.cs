@@ -1,5 +1,7 @@
 ﻿using Tutorial3.Models;
 
+namespace Tutorial3Tests;
+
 public class EmpDeptSalgradeTests
 {
     // 1. Simple WHERE filter
@@ -39,9 +41,9 @@ public class EmpDeptSalgradeTests
         var depts = Database.GetDepts();
 
         List<Emp> result = emps.Join(depts,
-            e => e.DeptNo,
-            d => d.DeptNo,
-            (e, d) => new { e, d })
+                e => e.DeptNo,
+                d => d.DeptNo,
+                (e, d) => new { e, d })
             .Where(joined => joined.d.Loc == "Chicago")
             .Select(joined => joined.e)
             .ToList();
@@ -75,9 +77,9 @@ public class EmpDeptSalgradeTests
         var depts = Database.GetDepts();
 
         var result = emps.Join(depts,
-            e => e.DeptNo,
-            d => d.DeptNo,
-            (e, d) => new { e, d })
+                e => e.DeptNo,
+                d => d.DeptNo,
+                (e, d) => new { e, d })
             .Select(joined => new {joined.e.EName, joined.d.DName})
             .ToList(); 
 
